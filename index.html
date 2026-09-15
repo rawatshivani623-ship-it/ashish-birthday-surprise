@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Ashish — A Birthday Full of Little Surprises ❤️</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080512;color:#fff;font-family:Georgia,serif;overflow-x:hidden}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:35px 18px;position:relative}
+.bg{position:fixed;inset:0;background:radial-gradient(circle at 50% 20%,#4b164d,#160b2a 50%,#05030c);z-index:-3}
+.stars{position:fixed;inset:0;z-index:-2}.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 2s infinite alternate}@keyframes tw{to{opacity:.15}}
+.card{width:min(760px,94vw);background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.17);border-radius:30px;padding:34px 23px;text-align:center;box-shadow:0 30px 100px #0008;backdrop-filter:blur(13px)}
+.kicker{letter-spacing:4px;text-transform:uppercase;font:12px Arial;opacity:.7}.heart{font-size:64px;animation:pulse 1.5s infinite}@keyframes pulse{50%{transform:scale(1.12)}}
+h1{font-size:clamp(3rem,12vw,7rem);margin:8px 0;background:linear-gradient(90deg,#fff,#ffb8dc,#ffe4a6,#fff);-webkit-background-clip:text;color:transparent;line-height:.9}
+h2{font-size:clamp(1.5rem,5vw,2.5rem)}p{line-height:1.8;font-size:1.05rem;color:#f8eaf5}
+button{border:0;border-radius:999px;padding:14px 25px;font-weight:bold;font-size:1rem;cursor:pointer;background:linear-gradient(135deg,#ffd0e9,#ffe7a4);color:#32122f;box-shadow:0 10px 30px #ffb9df33;transition:.2s}
+button:hover{transform:translateY(-2px) scale(1.03)}.hide{display:none!important}
+.envelope{margin:25px auto;width:210px;height:135px;background:#f6b7d4;border-radius:8px;position:relative;cursor:pointer;box-shadow:0 15px 45px #ff8bc755}
+.envelope:before{content:"";position:absolute;inset:0;background:#ffd5e7;clip-path:polygon(0 0,50% 55%,100% 0);transition:.5s}.seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#9e285e;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:23px;z-index:2}
+.letter{background:#fff8f1;color:#4b263b;border-radius:17px;padding:25px;text-align:left;line-height:1.8;box-shadow:0 10px 35px #0005}.letter p{color:#4b263b}
+.reveal{animation:reveal .7s ease}@keyframes reveal{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.tile{padding:22px 14px;border-radius:20px;background:#ffffff0d;border:1px solid #ffffff14;min-height:135px}.tile span{font-size:2rem}.tile h3{margin:8px 0}.tile p{font-size:.9rem;margin:0}
+#sky{position:fixed;inset:0;pointer-events:none;z-index:8}.balloon{position:absolute;bottom:-100px;width:52px;height:66px;border-radius:50%;animation:up 7s linear forwards}.balloon:after{content:"";position:absolute;left:50%;top:64px;height:130px;border-left:1px solid #ffffff66}@keyframes up{to{transform:translateY(-120vh) rotate(10deg);opacity:.8}}
+#fire{position:fixed;inset:0;pointer-events:none;z-index:20}.spark{position:absolute;width:7px;height:15px;animation:drop 2.5s forwards}@keyframes drop{to{transform:translateY(110vh) rotate(700deg);opacity:0}}
+.final{font-size:1.35rem}.signature{margin-top:22px;font-style:italic;color:#ffd2e8}
+.music{margin-top:12px;font:12px Arial;opacity:.7}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.card{padding:28px 16px}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="stars" id="stars"></div><div id="sky"></div><div id="fire"></div>
+
+<section>
+<div class="card">
+<div class="kicker">A little something made especially for</div>
+<div class="heart">❤️</div>
+<h1>ASHISH</h1>
+<p>Some birthdays deserve more than just a "Happy Birthday."<br>This one has a few surprises waiting for you.</p>
+<button onclick="begin()">Open Your Surprise ✨</button>
+</div>
+</section>
+
+<section id="letterSection" class="hide">
+<div class="card">
+<div class="kicker">Surprise #1</div>
+<h2>💌 There is a letter for you...</h2>
+<div class="envelope" onclick="openLetter()"><div class="seal">❤️</div></div>
+<p class="music">Tap the envelope</p>
+<div id="letter" class="letter hide reveal">
+<p><b>Dear Ashish,</b></p>
+<p>Happy Birthday! ❤️</p>
+<p>I hope today reminds you of how much happiness you bring into the lives of the people around you. I wish this new year of your life brings you peaceful days, exciting opportunities, good health, genuine smiles and moments you will always want to remember.</p>
+<p>There are some people who become a beautiful part of our memories simply by being themselves. So today, I just want to say: keep being you, keep moving forward, and keep that smile.</p>
+<p>May life surprise you in the best possible ways. And whenever things feel difficult, I hope you remember that brighter days are always possible.</p>
+<p>Have the happiest birthday, Ashish. 🎂✨</p>
+<p class="signature">With lots of good wishes, always ❤️</p>
+</div>
+</div>
+</section>
+
+<section id="surprises" class="hide">
+<div class="card">
+<div class="kicker">Surprise #2</div><h2>🎁 Little Things I Wish For You</h2>
+<div class="grid">
+<div class="tile"><span>🌟</span><h3>Dreams</h3><p>May your biggest dreams slowly become your reality.</p></div>
+<div class="tile"><span>😊</span><h3>Happiness</h3><p>May you always have reasons to smile, even on ordinary days.</p></div>
+<div class="tile"><span>🚀</span><h3>Success</h3><p>May every step forward take you somewhere you're proud of.</p></div>
+<div class="tile"><span>🫶</span><h3>People</h3><p>May life keep good-hearted people around you.</p></div>
+</div>
+</div>
+</section>
+
+<section id="memory" class="hide">
+<div class="card">
+<div class="kicker">Surprise #3</div><h2>🔐 Four Little Secrets</h2>
+<p>Tap each one. Don't rush. ❤️</p>
+<div class="grid">
+<div class="tile" onclick="secret(this,'Secret unlocked: You deserve a year that feels lighter, happier and full of beautiful moments. ✨')"><span>🔒</span><h3>Secret 1</h3><p>Tap me</p></div>
+<div class="tile" onclick="secret(this,'Secret unlocked: Never underestimate how far one small step can take you. 🌙')"><span>🔒</span><h3>Secret 2</h3><p>Tap me</p></div>
+<div class="tile" onclick="secret(this,'Secret unlocked: Your next chapter can be even better than the ones before it. 📖')"><span>🔒</span><h3>Secret 3</h3><p>Tap me</p></div>
+<div class="tile" onclick="secret(this,'Secret unlocked: Today, you are officially allowed to eat extra cake. 🎂😄')"><span>🔒</span><h3>Secret 4</h3><p>Tap me</p></div>
+</div>
+</div>
+</section>
+
+<section id="wish" class="hide">
+<div class="card">
+<div class="kicker">Surprise #4</div><h2>🌠 Make a Birthday Wish</h2>
+<p>Close your eyes for a moment.<br>Think of something you truly want.</p>
+<button onclick="wish()">✨ I Made My Wish</button>
+<h2 id="wishText" class="hide reveal">Wish accepted by the birthday universe. 🌌❤️</h2>
+</div>
+</section>
+
+<section id="final" class="hide">
+<div class="card">
+<div class="kicker">The final surprise</div>
+<h2>🎂 Happy Birthday, Ashish!</h2>
+<p class="final">May this year give you more reasons to laugh, more moments to be proud of, more places to go, and more beautiful memories to keep.</p>
+<p class="final">And now…</p>
+<button onclick="celebrate()">🎈 Make the Sky Celebrate</button>
+<h2 id="finish" class="hide reveal">🎉 Today is all about you! 🎉</h2>
+</div>
+</section>
+
+<script>
+const starBox=document.getElementById('stars');for(let i=0;i<110;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*2+'s';starBox.appendChild(s)}
+function show(id){document.getElementById(id).classList.remove('hide')}
+function begin(){show('letterSection');show('surprises');show('memory');show('wish');show('final');celebrate(15);document.getElementById('letterSection').scrollIntoView({behavior:'smooth'})}
+function openLetter(){document.getElementById('letter').classList.remove('hide');fireworks(25)}
+function secret(el,msg){el.querySelector('span').textContent='🔓';el.querySelector('p').textContent=msg;el.style.minHeight='160px'}
+function wish(){document.getElementById('wishText').classList.remove('hide');fireworks(55)}
+function balloon(){let b=document.createElement('i');b.className='balloon';let c=['#ff7ab8','#ffd166','#9be7ff','#c7a7ff','#8ff0bb','#fff'];let col=c[Math.floor(Math.random()*c.length)];b.style.background=col;b.style.left=Math.random()*96+'%';b.style.animationDuration=(5+Math.random()*5)+'s';document.getElementById('sky').appendChild(b);setTimeout(()=>b.remove(),11000)}
+function fireworks(n=70){let f=document.getElementById('fire');for(let i=0;i<n;i++){let x=document.createElement('i');x.className='spark';x.style.left=Math.random()*100+'%';x.style.top=(-10-Math.random()*20)+'vh';x.style.background=['#fff','#ffd166','#ff7ab8','#9be7ff'][Math.floor(Math.random()*4)];x.style.animationDelay=Math.random()*.7+'s';f.appendChild(x);setTimeout(()=>x.remove(),3500)}}
+function celebrate(n=35){for(let i=0;i<n;i++)setTimeout(balloon,i*90);fireworks(55)}
+</script>
+</body>
+</html>
